@@ -1,0 +1,106 @@
+.container {
+    background-color: aliceblue;
+    height: 100vh;
+
+}
+
+.cenario {
+    position: relative;
+    background-image: linear-gradient(aqua, #f3f3f3);
+    border-bottom: 4px  solid green;
+    overflow: hidden     ;
+    min-height: 96vh;
+
+}
+
+.game_over {
+
+    position: absolute;
+    bottom: 50%;
+    width: 100%;    
+    color: #f4f4f4;
+    font-size: 30px;
+    display: flex;
+    padding: 50px 50px;
+    justify-content: center;
+    background-color: red;
+    padding: 10px 50px;
+}
+
+.contador {
+    position: absolute;
+    bottom: 80%;
+    width: 100%;    
+    color: green;
+    font-size: 30px;
+    font-weight: 700;
+    font-size: 30px;
+    display: flex;
+    padding: 50px 50px;
+    justify-content: center;
+    padding: 10px 50px;
+}
+
+.mario {
+    width: 180px;
+    position: absolute;
+    bottom: 0;
+}
+
+.pipe {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: pipe 2s linear infinite;
+}
+
+.jump {
+    animation: jump linear 700ms;
+}
+
+.nuvem {
+    width: 400px;
+    position: absolute;
+    top: 90px;
+
+    animation: nuvem infinite linear 9s;
+}
+
+@keyframes nuvem {
+    to {
+        left: -400px;
+    }
+
+    from {
+        left: 100%;
+    }
+}
+
+
+@keyframes pipe {
+    to {
+        left: -100px;
+    }
+
+    from {
+        left: 100%;
+    }
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0px;
+    }
+    45% {
+        bottom: 245px
+    }
+    50% {
+        bottom: 250px
+    }
+    55% {
+        bottom: 245px
+    }
+    100% {
+        bottom: 0px
+    }
+}
